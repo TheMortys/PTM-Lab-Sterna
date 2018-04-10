@@ -1,0 +1,61 @@
+A51 MACRO ASSEMBLER  KOPIOWANIE_ZEW_ZEW                                                   04/10/2018 16:36:13 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\kopiowanie zew zew.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE kopiowanie zew zew.asm SET(SMALL) DEBUG PRINT(.\Listings\kopiowanie zew
+                       zew.lst) OBJECT(.\Objects\kopiowanie zew zew.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0
+                       2     
+0000 7830              3             MOV R0, #30h ;mlodsze bity
+0002 7940              4             MOV R1, #40h ;starsze bity
+0004 900050            5             MOV DPTR, #50h
+0007 7A08              6             MOV R2, #8
+0009 12000E            7             LCALL COPY
+000C 80FE              8             SJMP $
+                       9                     
+000E                  10                     COPY:
+000E E582             11                     MOV A, DPL
+0010 8982             12                     MOV DPL, R1
+0012 F9               13                     MOV R1, A
+0013 E583             14                     MOV A, DPH
+0015 8883             15                     MOV DPH, R0
+0017 F8               16                     MOV R0, A
+0018 E0               17                     MOVX A, @DPTR
+0019 A3               18                     INC DPTR
+001A E582             19                     MOV A, DPL
+001C 8982             20                     MOV DPL, R1
+001E F9               21                     MOV R1, A
+001F E583             22                     MOV A, DPH
+0021 8883             23                     MOV DPH, R0
+0023 F8               24                     MOV R0, A
+0024 F0               25                     MOVX @DPTR, A
+0025 A3               26                     INC DPTR
+                      27                     
+0026 1A               28                     DEC R2
+0027 EA               29                     MOV A, R2
+0028 70E4             30                     JNZ COPY
+                      31                     
+002A 22               32                     RET
+                      33                     
+                      34     END
+A51 MACRO ASSEMBLER  KOPIOWANIE_ZEW_ZEW                                                   04/10/2018 16:36:13 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+COPY . . . . . . .  C ADDR   000EH   A   
+DPH. . . . . . . .  D ADDR   0083H   A   
+DPL. . . . . . . .  D ADDR   0082H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
