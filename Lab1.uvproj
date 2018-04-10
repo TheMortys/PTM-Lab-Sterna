@@ -33,10 +33,10 @@
           <SFDFile></SFDFile>
           <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
-          <BinPath></BinPath>
+          <BinPath>C:\Keil_v5\C51\BIN\</BinPath>
           <IncludePath></IncludePath>
           <LibPath></LibPath>
-          <RegisterFilePath>Infineon\</RegisterFilePath>
+          <RegisterFilePath></RegisterFilePath>
           <DBRegisterFilePath>Infineon\</DBRegisterFilePath>
           <TargetStatus>
             <Error>0</Error>
@@ -365,9 +365,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>kopiowanie.asm</FileName>
+              <FileName>kopiowanie2.asm</FileName>
               <FileType>2</FileType>
-              <FilePath>.\kopiowanie.asm</FilePath>
+              <FilePath>.\kopiowanie2.asm</FilePath>
             </File>
           </Files>
         </Group>

@@ -1,4 +1,4 @@
-A51 MACRO ASSEMBLER  KOPIOWANIE                                                           04/10/2018 14:55:42 PAGE     1
+A51 MACRO ASSEMBLER  KOPIOWANIE                                                           04/10/2018 15:22:09 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.2.7.0
@@ -29,7 +29,7 @@ LOC  OBJ            LINE     SOURCE
 0013 22               19                     RET
                       20                     
                       21     END
-A51 MACRO ASSEMBLER  KOPIOWANIE                                                           04/10/2018 14:55:42 PAGE     2
+A51 MACRO ASSEMBLER  KOPIOWANIE                                                           04/10/2018 15:22:09 PAGE     2
 
 SYMBOL TABLE LISTING
 ------ ----- -------
