@@ -1,15 +1,15 @@
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    04/10/2018  15:36:06  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    04/10/2018  17:33:01  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
-C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\kopiowanie2.obj TO .\Objects\Lab1 PRINT (.\Listings\Lab1.m51) RAMSIZE (256)
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\sterowanie diod¹.obj TO .\Objects\Lab1 PRINT (.\Listings\Lab1.m51) RAMSIZE (256)
 
 
 INPUT MODULES INCLUDED:
-  .\Objects\kopiowanie2.obj (KOPIOWANIE2)
+  .\Objects\sterowanie diod¹.obj (STEROWANIE_DIOD_)
 
 
-LINK MAP OF MODULE:  .\Objects\Lab1 (KOPIOWANIE2)
+LINK MAP OF MODULE:  .\Objects\Lab1 (STEROWANIE_DIOD_)
 
 
             TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
@@ -19,35 +19,77 @@ LINK MAP OF MODULE:  .\Objects\Lab1 (KOPIOWANIE2)
             REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
-            CODE    0000H     0015H     ABSOLUTE     
+            CODE    0000H     004CH     ABSOLUTE     
 
 
 
-SYMBOL TABLE OF MODULE:  .\Objects\Lab1 (KOPIOWANIE2)
+SYMBOL TABLE OF MODULE:  .\Objects\Lab1 (STEROWANIE_DIOD_)
 
   VALUE           TYPE          NAME
   ----------------------------------
 
-  -------         MODULE        KOPIOWANIE2
-  C:000CH         SYMBOL        COPY
-  C:0000H         LINE#         3
-  C:0002H         LINE#         4
-  C:0005H         LINE#         5
-  C:0007H         LINE#         6
-  C:000AH         LINE#         7
-  C:000CH         LINE#         10
-  C:000DH         LINE#         11
-  C:000EH         LINE#         12
-  C:000FH         LINE#         13
-  C:0010H         LINE#         14
-  C:0011H         LINE#         15
-  C:0012H         LINE#         17
-  C:0014H         LINE#         19
-  -------         ENDMOD        KOPIOWANIE2
+  -------         MODULE        STEROWANIE_DIOD_
+  C:003EH         SYMBOL        DELAY
+  C:003FH         SYMBOL        DELAY1
+  C:0041H         SYMBOL        DELAY2
+  C:0043H         SYMBOL        DELAY3
+  B:0090H.0       SYMBOL        LED
+  B:0090H.1       SYMBOL        LED1
+  B:0090H.2       SYMBOL        LED2
+  B:0090H.3       SYMBOL        LED3
+  B:0090H.4       SYMBOL        LED4
+  B:0090H.5       SYMBOL        LED5
+  B:0090H.6       SYMBOL        LED6
+  B:0090H.7       SYMBOL        LED7
+  D:0090H         SYMBOL        P1
+  C:0000H         SYMBOL        START
+  C:0000H         LINE#         13
+  C:0002H         LINE#         14
+  C:0003H         LINE#         15
+  C:0005H         LINE#         16
+  C:0007H         LINE#         17
+  C:0009H         LINE#         18
+  C:000BH         LINE#         19
+  C:000DH         LINE#         20
+  C:000FH         LINE#         21
+  C:0011H         LINE#         22
+  C:0013H         LINE#         23
+  C:0016H         LINE#         24
+  C:0018H         LINE#         25
+  C:001AH         LINE#         26
+  C:001CH         LINE#         27
+  C:001EH         LINE#         28
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  04/10/2018  17:33:01  PAGE 2
+
+
+  C:0020H         LINE#         29
+  C:0022H         LINE#         30
+  C:0024H         LINE#         31
+  C:0026H         LINE#         32
+  C:0029H         LINE#         33
+  C:002BH         LINE#         34
+  C:002DH         LINE#         35
+  C:002FH         LINE#         36
+  C:0031H         LINE#         37
+  C:0033H         LINE#         38
+  C:0035H         LINE#         39
+  C:0037H         LINE#         40
+  C:0039H         LINE#         41
+  C:003CH         LINE#         42
+  C:003EH         LINE#         48
+  C:003FH         LINE#         50
+  C:0041H         LINE#         52
+  C:0043H         LINE#         54
+  C:0044H         LINE#         55
+  C:0045H         LINE#         56
+  C:0047H         LINE#         57
+  C:0049H         LINE#         58
+  C:004BH         LINE#         59
+  -------         ENDMOD        STEROWANIE_DIOD_
 
 ******************************************************************************
-* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0015H BYTE ( 1%) *
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 004CH BYTE ( 3%) *
 ******************************************************************************
 
-Program Size: data=8.0 xdata=0 code=21
+Program Size: data=8.0 xdata=0 code=76
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

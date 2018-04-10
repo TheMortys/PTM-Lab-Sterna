@@ -1,0 +1,46 @@
+A51 MACRO ASSEMBLER  KOPIOWANIE_WEW_WEW                                                   04/10/2018 17:27:41 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\kopiowanie wew wew.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE kopiowanie wew wew.asm SET(SMALL) DEBUG PRINT(.\Listings\kopiowanie wew
+                       wew.lst) OBJECT(.\Objects\kopiowanie wew wew.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0
+                       2     
+0000 7830              3             MOV R0, #30h
+0002 7940              4             MOV R1, #40h
+0004 7A08              5             MOV R2, #8
+0006 12000B            6             LCALL COPY
+0009 80FE              7             SJMP $
+                       8                     
+000B                   9                     COPY:
+000B E6               10                     MOV A, @R0
+000C F7               11                     MOV @R1, A
+000D 08               12                     INC R0
+000E 09               13                     INC R1
+000F 1A               14                     DEC R2
+0010 EA               15                     MOV A, R2
+                      16                     
+0011 70F8             17                     JNZ COPY
+                      18                     
+0013 22               19                     RET
+                      20                     
+                      21     END
+A51 MACRO ASSEMBLER  KOPIOWANIE_WEW_WEW                                                   04/10/2018 17:27:41 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+COPY . . . . . . .  C ADDR   000BH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

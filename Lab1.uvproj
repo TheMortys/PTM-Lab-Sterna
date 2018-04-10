@@ -231,7 +231,7 @@
               <RCB>
                 <Type>0</Type>
                 <StartAddress>0x0</StartAddress>
-                <Size>0x0</Size>
+                <Size>0x10000</Size>
               </RCB>
               <RXB>
                 <Type>0</Type>
@@ -365,9 +365,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>kopiowanie2.asm</FileName>
+              <FileName>sterowanie diodą.asm</FileName>
               <FileType>2</FileType>
-              <FilePath>.\kopiowanie2.asm</FilePath>
+              <FilePath>.\sterowanie diodą.asm</FilePath>
             </File>
           </Files>
         </Group>

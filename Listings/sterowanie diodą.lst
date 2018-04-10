@@ -1,0 +1,100 @@
+A51 MACRO ASSEMBLER  STEROWANIE_DIOD_                                                     04/10/2018 17:33:00 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\sterowanie diod¹.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE sterowanie diod¹.asm SET(SMALL) DEBUG PRINT(.\Listings\sterowanie diod¹
+                      .lst) OBJECT(.\Objects\sterowanie diod¹.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+  0090                 1     LED BIT P1.0
+  0091                 2     LED1 BIT P1.1
+  0092                 3     LED2 BIT P1.2
+  0093                 4     LED3 BIT P1.3
+  0094                 5     LED4 BIT P1.4
+  0095                 6     LED5 BIT P1.5
+  0096                 7     LED6 BIT P1.6
+  0097                 8     LED7 BIT P1.7
+                       9     
+0000                  10     ORG 0
+                      11             
+0000                  12             START:
+0000 7F64             13             MOV R7, #100
+0002 EF               14             MOV A, R7
+0003 C290             15             CLR LED
+0005 C291             16             CLR LED1
+0007 C292             17             CLR LED2
+0009 C293             18             CLR LED3
+000B D294             19             SETB LED4
+000D D295             20             SETB LED5
+000F D296             21             SETB LED6
+0011 D297             22             SETB LED7
+0013 12003E           23             LCALL DELAY
+0016 C290             24             CLR LED
+0018 C291             25             CLR LED1
+001A C292             26             CLR LED2
+001C C293             27             CLR LED3
+001E D294             28             SETB LED4
+0020 D295             29             SETB LED5
+0022 D296             30             SETB LED6
+0024 D297             31             SETB LED7
+0026 12003E           32             LCALL DELAY
+0029 C290             33             CLR LED
+002B C291             34             CLR LED1
+002D C292             35             CLR LED2
+002F C293             36             CLR LED3
+0031 D294             37             SETB LED4
+0033 D295             38             SETB LED5
+0035 D296             39             SETB LED6
+0037 D297             40             SETB LED7
+0039 12003E           41             LCALL DELAY
+003C 80C2             42             SJMP START
+                      43             
+                      44     ;====================== 
+                      45        ;DELAY R7 x 10 ms
+                      46     ;====================== 
+003E                  47             DELAY:
+003E F8               48                     MOV R0, A
+003F                  49             DELAY1:
+003F 7905             50                     MOV R1, #5
+0041                  51             DELAY2:
+0041 7AFA             52                     MOV R2, #250
+0043                  53             DELAY3:
+0043 00               54                     NOP
+0044 00               55                     NOP
+0045 DAFC             56                     DJNZ R2, DELAY3
+0047 D9F8             57                     DJNZ R1, DELAY2
+A51 MACRO ASSEMBLER  STEROWANIE_DIOD_                                                     04/10/2018 17:33:00 PAGE     2
+
+0049 D8F4             58                     DJNZ R0, DELAY1
+004B 22               59                     RET
+                      60     END
+A51 MACRO ASSEMBLER  STEROWANIE_DIOD_                                                     04/10/2018 17:33:00 PAGE     3
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DELAY. . . . . . .  C ADDR   003EH   A   
+DELAY1 . . . . . .  C ADDR   003FH   A   
+DELAY2 . . . . . .  C ADDR   0041H   A   
+DELAY3 . . . . . .  C ADDR   0043H   A   
+LED. . . . . . . .  B ADDR   0090H.0 A   
+LED1 . . . . . . .  B ADDR   0090H.1 A   
+LED2 . . . . . . .  B ADDR   0090H.2 A   
+LED3 . . . . . . .  B ADDR   0090H.3 A   
+LED4 . . . . . . .  B ADDR   0090H.4 A   
+LED5 . . . . . . .  B ADDR   0090H.5 A   
+LED6 . . . . . . .  B ADDR   0090H.6 A   
+LED7 . . . . . . .  B ADDR   0090H.7 A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+START. . . . . . .  C ADDR   0000H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
